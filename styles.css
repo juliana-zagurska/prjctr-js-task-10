@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Rubik&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+tr {
+  cursor: pointer;
+  background-color: #7a3838;
+}
+
+body {
+  background-color: #d8daef;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #111;
+  font-family: 'Rubik', sans-serif;
+}
+.container{
+  width: 34vw;
+}
+.task-title{
+  margin-bottom: 10px;
+}
+.create-task-block{
+  margin-bottom: 20px;
+}
+.filter-task-block{
+  margin-bottom: 20px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.btn {
+  background-color: #3498db; 
+  color: #fff; 
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9; 
+}
+.clear-tasks{
+  background-color: rgb(233, 0, 0);
+  color: #fff; 
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.clear-tasks:hover{
+  background-color: rgb(111, 3, 3);
+}
+h1 {
+  margin-bottom: 24px;
+}
+.collection{
+  margin-bottom: 10px;
+  
+}
+ul {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px; 
+  overflow-y: auto;
+}
+
+li:not(:first-child) {
+  margin-top: 10px; 
+}
+li::before {
+  content: '\f058'; 
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 10px; 
+  margin-left: 5px;
+}
+
+.edit-btn{
+  padding: 5px;
+  margin-left: 5px;
+}
+.delete-btn{
+  position: relative;
+  padding: 5px;
+  margin-left: 10px;
+}
+.delete-btn::before {
+  content: '\f1f8'; 
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%); 
+}
+@media (max-width: 767px) {
+  .container{
+    width: 82vw;
+  }
+}
